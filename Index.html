@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVerse - آخر أخبار التقنية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">TechVerse</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active-page">الأخبار</a></li>
+                <li><a href="comparison.html">المقارنات</a></li>
+                <li><a href="leaks.html">التسريبات</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="main-content">
+        <section class="filters-section fade-in">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="ابحث عن مقال...">
+            </div>
+            <div class="filter-wrapper">
+                <select id="brandFilter">
+                    <option value="all">كل العلامات التجارية</option>
+                    </select>
+            </div>
+        </section>
+
+        <section class="featured" id="articles">
+            <div id="articles-grid" class="articles-grid">
+                </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <p>عفواً، لم يتم العثور على نتائج تطابق بحثك.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVerse. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

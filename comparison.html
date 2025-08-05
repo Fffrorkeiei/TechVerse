@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVerse - مقارنة الأجهزة</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">TechVerse</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الأخبار</a></li>
+                <li><a href="comparison.html" class="active-page">المقارنات</a></li>
+                <li><a href="leaks.html">التسريبات</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="main-content">
+        <section class="comparison-page fade-in">
+            <h1 class="section-title">قارن بين الأجهزة</h1>
+            
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="phones">الهواتف</button>
+                    <button class="tab-button" data-tab="gpus">كروت الشاشة</button>
+                    <button class="tab-button" data-tab="cpus">المعالجات</button>
+                    <button class="tab-button" data-tab="laptops">اللابتوبات</button>
+                </div>
+                
+                <div id="comparison-content" class="tab-content active">
+                    <div class="device-selector">
+                        <select id="device1-select" class="device-select"></select>
+                        <div class="vs-badge">VS</div>
+                        <select id="device2-select" class="device-select"></select>
+                    </div>
+                    <button id="compare-btn" class="compare-button">قارن الآن</button>
+                    <div id="comparison-results" class="comparison-results-grid">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVerse. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/comparison.js"></script>
+</body>
+</html>
